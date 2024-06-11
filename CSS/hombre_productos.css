@@ -1,0 +1,421 @@
+/* Estilo items generales */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+::placeholder{
+    text-align: start;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    padding: 0%;
+}
+.hidden{
+    display: none;
+}
+
+/* Estilo header */
+
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+
+    box-shadow: 0 2px 4px rgba(249, 251, 253, 0.1);
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-account li a:hover{
+    color: #d10e0e;
+    transition: .2s;
+}
+.nav-search{
+    display: flex;
+}
+#search-input{
+    width: 250px;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: start;
+    margin-right: 10px;
+}
+#search-button{
+    width: 30px;
+    height: 30px;
+    background-color: 
+    #f0a607;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#search-button:hover{
+    background-color: #ebb810;
+    transition: .2s;
+}
+.texto-rosa-header{
+    width: 100%;
+    height: 40px;
+    height: auto;
+    background-color: #7171e6;
+    padding: 10px;
+}
+.logo-account-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    height: 95px;
+    width: 100%;
+}
+.nav-account{
+    list-style: none;
+    display: flex;
+}
+.nav-account li{
+    padding: 0px 10px;
+}
+#logo-header{
+    line-height: 90px;
+    height: 90px;
+}
+.nav-list-rosa{
+    display: flex;
+    justify-content: center;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list-item{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.nav-list-item a:hover{
+    font-weight: bold;
+    transition: .3s;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ec0d0d;
+    box-shadow: 0 2px 4px rgba(249, 249, 250, 0.1);
+    padding: 10px;
+}
+
+.nav-list-item:hover .submenu li {
+    display: block;
+}
+.nav-list-item:hover .submenu {
+    width: 100%;
+    background: blue;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+
+/* Estilo contenido central de la página*/
+
+main{
+    padding-top: 170px;
+}
+.section-introduction{
+    background-image: url(../IMG/hombre.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 54vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0% 9%;
+
+    text-align: center;
+    color: #c7dcf0;
+}
+.section-introduction h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.section-introduction p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.btn-introduction {
+    background-color: #5570c9;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-introduction:hover{
+    background-color: #cc1457;
+}
+
+/* Estilo de la sección de Productos*/
+
+.titulo-productos{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.section-productos {
+    margin: 30px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-productos{
+    width: 85%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-gap: 1rem;
+}
+.box-producto{
+    padding: 15px;
+    height: 450px;
+    width: 250px;
+    border: solid .5px rgba(68, 94, 238, 0.193);
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #0000002f ;
+    margin: auto;
+}
+.img-producto{
+    height: 60%;
+    width: 100%;
+}
+.box-producto img{
+    height: 90%;
+    max-width: 100%;
+}
+.info-producto{
+    height: 20%;
+}
+.info-producto h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 8px 0px;
+    line-height: 18px;
+}
+.info-producto p{
+    line-height: 16px;
+}
+.precio-producto{
+    height: 20%;
+}
+.agregar-carrito-btn{
+    background-color: #555dc9;
+    padding: 5px 20px;
+    border: solid 0.5px rgba(0, 0, 0, 0.193);
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+#mostrar-mas-btn, #mostrar-menos-btn, #editar-productos{
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    margin: 50px 30px 0px;
+    background-color: #ffcadd;
+    border: solid 0.5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+.btns-productos{
+    display: flex;
+}
+/* Estilo de la sección sobre nosotros */
+
+.section-about-us{
+    margin: 30px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-about-us{
+    background-color: rgb(195, 237, 252);
+    margin: 30px 0px 0px;
+    width: 80%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-about-us h2, .container-about-us p{
+    text-align: start;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+/* Estilo de la sección de contáctanos*/
+
+.container-contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+    width: 70%;
+    margin: 30px auto;
+}
+.contact-form, .company-info{
+    width: 50%;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+}
+.contact-form p{
+    width: 100%;
+    margin: 0px auto 20px;
+    text-align: start;
+}
+.section-title{
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+.contact-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.contact-form form input , .contact-form form textarea {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: start;
+    height: 35px;
+}
+.contact-form form button{
+    background-color: rgb(240, 240, 240);
+    color: #000;
+    width: 80%;
+    margin: 0% auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    border: .5px solid rgba(0, 0, 0, 0.079);
+}
+.contact-form form button:hover{
+    background-color: rgb(220, 220, 220);
+    transition: .2s;
+}
+.company-info-text{
+    padding-bottom: 30px;
+    text-align: start;
+}
+.company-info-item{
+    text-align: start;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+.company-info-item i{
+    width: 20px;
+    color: #ff7eab;
+}
+.fa-brands{
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: #ffcadd;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo footer de la página*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo del Carrito */
+
+.carrito{
+    height: auto;
+    width: 600px;
+    min-width: 500px;
+    padding: 20px 0px;
+    margin: 40px auto;
+    border: solid 2px #0000002b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carrito h3{
+    text-transform: uppercase;
+    margin: 10px;
+}
+.carrito-total{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.carrito button{
+    background-color: #ffcadd;
+    padding: 5px 30px;    
+    margin: 0px 20px;
+    border: solid 1px #0000002b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carrito button:hover{
+    background-color: #ffb8d2;
+    transition: .2s;
+}
+
+@media screen and (max-width: 1400px) {
+    .section-introduction{
+        padding: 0% 7%;
+    }
+    .section-introduction h1 {
+        font-size: 27px;
+    }
+    .section-introduction p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    /* Estilo de la sección de contáctanos*/
+    .container-contact-info{
+        width: 90%;
+    }
+    .contact-form, .company-info{
+        width: 50%;
+        padding: 0px 30px;
+    }
+}
